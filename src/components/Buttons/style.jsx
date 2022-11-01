@@ -39,6 +39,14 @@ export const Button2 = styled.button`
   transition: all 0.3s;
   cursor: pointer;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    width: 25px;
+  }
+
   &:hover, &:active{
     text-decoration: underline;
   }
@@ -81,6 +89,14 @@ export const Button4 = styled.button`
   border: none;
   transition: all 0.3s;
   cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    width: 25px;
+  }
 
   &:hover, &:active{
     text-decoration: underline;

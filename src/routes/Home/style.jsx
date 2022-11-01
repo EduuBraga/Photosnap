@@ -1,34 +1,42 @@
 import styled from "styled-components"
 
-export const Container = styled.section`
+export const Container = styled.div`
   
 `
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  color: black;
-  height: 70px;
-
-
-  div{
+export const SectionOne = styled.section`
+  display: grid;
+  grid-template: auto / 45% 55%;
+  
+  div:nth-child(1){
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 21;
+    padding: 111px;
+    color: white;
+    background-color: black;
 
-    font-weight: 700;
-    font-size: 20px;
+    P{
+      opacity: 0.6;
+    }
 
-    div{
-      border-top: 19px solid green;
-      border-right: 19px solid blue;
-      border-left: 19px solid red;
-      border-bottom: 19px solid linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-      width: 19px;
-      height: 19px;
+    button{
+      align-self: flex-start;
+    }
+  }
 
-      background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+  div:nth-child(2){
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
   }
 `
