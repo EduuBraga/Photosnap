@@ -64,6 +64,7 @@ export const Nav = styled.nav`
   font-weight: 500;
 
   a:active, a:hover{
-    color: var(--lightGray);
+    opacity: 0.3;
+    text-decoration: none;
   }
 `

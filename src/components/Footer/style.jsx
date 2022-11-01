@@ -5,13 +5,13 @@ export const Container = styled.footer`
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 65px 150px;
 `
 
 export const ContainerLeft = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 80px;
 `
 
 export const ContainerLogoAndMidia = styled.div`
@@ -19,7 +19,7 @@ export const ContainerLogoAndMidia = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 85px;
+  gap: 80px;
 
   div:nth-child(1){
     display: flex;
@@ -35,23 +35,6 @@ export const ContainerLogoAndMidia = styled.div`
       z-index: 10;
       margin: 0px;
     } 
-  }
-`
-
-export const Nav = styled.nav`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 17px;
-
-  a{
-    font-size: 12px;
-
-    &:active, &:hover{
-      text-decoration: none;
-      opacity: 0.3;
-    }
   }
 `
 
@@ -119,10 +102,27 @@ export const MidiasSociais = styled.div`
   }
 `
 
+export const Nav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+
+  a{
+    font-size: 12px;
+
+    &:active, &:hover{
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
+`
+
 export const ContainerRight = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 86px;
 
