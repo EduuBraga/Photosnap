@@ -62,6 +62,7 @@ export const Nav = styled.nav`
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 500;
+  letter-spacing: 2px;
 
   a:active, a:hover{
     opacity: 0.3;

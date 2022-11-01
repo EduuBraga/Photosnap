@@ -111,6 +111,7 @@ export const Nav = styled.nav`
 
   a{
     font-size: 12px;
+    letter-spacing: 2px;
 
     &:active, &:hover{
       text-decoration: none;
