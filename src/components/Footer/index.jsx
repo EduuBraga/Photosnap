@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Button4 } from "../Buttons/style";
 
@@ -17,6 +18,8 @@ import arrow_white from '../../assets/icons/arrow_white.png';
 import { Container, ContainerRight, ContainerLeft, Logo, Nav, MidiasSociais, ContainerLogoAndMidia } from "./style";
 
 export function Footer() {
+  let navigate = useNavigate()
+
   return (
     <Container>
       <ContainerLeft>
@@ -55,8 +58,8 @@ export function Footer() {
         </ContainerLogoAndMidia>
 
         <Nav>
-          <a>HOME</a>
-          <a>STORIES</a>
+          <a onClick={() => { navigate('/') }}>HOME</a>
+          <a onClick={() => { navigate('/stories') }}>STORIES</a>
           <a>FEATURES</a>
           <a>PRINCING</a>
         </Nav>

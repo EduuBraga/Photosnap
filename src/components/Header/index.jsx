@@ -1,8 +1,13 @@
 import React from "react"
+import { useNavigate } from "react-router-dom";
+
 import { Button1 } from "../../components/Buttons/style"
+
 import { Container, Logo, Nav } from "./style"
 
 export function Header() {
+  let navigate = useNavigate()
+
   return (
     <Container>
       <div>
@@ -14,7 +19,7 @@ export function Header() {
         <p>PHOTOSNAP</p>
       </div>
       <Nav>
-        <a>STORIES</a>
+        <a onClick={() => { navigate('/stories') }}>STORIES</a>
         <a>FEATURES</a>
         <a>PRICING</a>
       </Nav>
