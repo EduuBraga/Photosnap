@@ -23,7 +23,6 @@ export const Button1 = styled.button`
   }
 `
 export const Button2 = styled.button`
-  width: 158px;
   height: 40px;
   background-color: #00000000;
   color: var(--black);
@@ -42,6 +41,7 @@ export const Button2 = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
   img{
     width: 25px;
@@ -74,7 +74,6 @@ export const Button3 = styled.button`
   }
 `
 export const Button4 = styled.button`
-  width: 158px;
   height: 40px;
   background-color: #00000000;
   color: var(--white);
@@ -93,6 +92,7 @@ export const Button4 = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
   img{
     width: 25px;

@@ -8,6 +8,10 @@ export const GlobalStyles = createGlobalStyle`
     --mainAccent: linear-gradient(#ffc593, #bc7198, #5a77ff);
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   body{
     margin: 0px;
     padding: 0px;
@@ -35,5 +39,15 @@ export const GlobalStyles = createGlobalStyle`
   h4{
     font-size: 12px;
     line-height: 16px;
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+
+    &:hover, &:active{
+      text-decoration: underline;
+    }
   }
 `
