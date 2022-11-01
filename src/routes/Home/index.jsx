@@ -5,9 +5,9 @@ import { Button2, Button4 } from "../../components/Buttons/style";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
-import img1_Section1 from "../../assets/images/img1_section1.png";
-import img1_Section2 from "../../assets/images/img1_section2.png";
-import img1_Section3 from "../../assets/images/img1_section3.png";
+import img1_Section1 from "../../assets/images/img1_section1_home.png";
+import img1_Section2 from "../../assets/images/img1_section2_home.png";
+import img1_Section3 from "../../assets/images/img1_section3_home.png";
 import arrow_white from "../../assets/icons/arrow_white.png";
 import arrow_black from "../../assets/icons/arrow_black.png";
 import midias_sociais from "../../assets/icons/midias_sociais.jpg";

@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-import img1_section4 from '../../assets/images/img1_section4.png'
-import img2_section4 from '../../assets/images/img2_section4.png'
-import img3_section4 from '../../assets/images/img3_section4.png'
-import img4_section4 from '../../assets/images/img4_section4.png'
+import img1_section4 from '../../assets/images/img1_section4_home.png'
+import img2_section4 from '../../assets/images/img2_section4_home.png'
+import img3_section4 from '../../assets/images/img3_section4_home.png'
+import img4_section4 from '../../assets/images/img4_section4_home.png'
 
 export const Container = styled.div`
   

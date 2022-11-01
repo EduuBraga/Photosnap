@@ -1,11 +1,22 @@
 import React from "react";
 
-import { Container } from "./style";
+import { Footer } from "../../components/Footer";
+import { Header } from "../../components/Header";
 
-export function Stories(){
-  return(
+import { Container, SectionOne } from "./style";
+
+export function Stories() {
+  return (
     <Container>
-      Olá, mundo!
+      <Header />
+
+      <main>
+        <SectionOne>
+          
+        </SectionOne>
+      </main>
+
+      <Footer />
     </Container>
   )
 }
