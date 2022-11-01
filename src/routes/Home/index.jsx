@@ -2,6 +2,7 @@ import React from "react"
 
 import { Button2,  Button4 } from "../../components/Buttons/style"
 import { Header } from "../../components/Header"
+import { Footer } from "../../components/Footer"
 
 import img1_Section1 from "../../assets/images/img1_section1.png"
 import img1_Section2 from "../../assets/images/img1_section2.png"
@@ -95,6 +96,7 @@ export function Home() {
           <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. </p>
         </div>
       </SectionFive>
+      <Footer />
     </Container>
   )
 }
