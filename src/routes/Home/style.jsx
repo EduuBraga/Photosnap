@@ -172,6 +172,7 @@ export const SectionFor = styled.section`
       margin-bottom: 16px;
     }
     h4{
+      letter-spacing: 2px;
       display: flex;
       justify-content: space-between;
       align-items: center;

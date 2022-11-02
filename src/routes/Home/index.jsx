@@ -60,25 +60,25 @@ export function Home() {
           <h3>The Mountains</h3>
           <p>by John Appleseed</p>
           <span></span>
-          <h4>READ STORIES <img src={arrow_white} alt="Arrow right" /></h4>
+          <h4>READ STORY <img src={arrow_white} alt="Arrow right" /></h4>
         </div>
         <div onClick={() => { navigate('/stories') }}>
           <h3>Sunset Cityscapes</h3>
           <p>by Benjamin Cruz</p>
           <span></span>
-          <h4>READ STORIES <img src={arrow_white} alt="Arrow right" /></h4>
+          <h4>READ STORY <img src={arrow_white} alt="Arrow right" /></h4>
         </div>
         <div onClick={() => { navigate('/stories') }}>
           <h3>18 Days Voyage</h3>
           <p>by Alexei Borodin</p>
           <span></span>
-          <h4>READ STORIES <img src={arrow_white} alt="Arrow right" /></h4>
+          <h4>READ STORY <img src={arrow_white} alt="Arrow right" /></h4>
         </div>
         <div onClick={() => { navigate('/stories') }}>
           <h3>Architecturals</h3>
           <p>by Samantha Brooke</p>
           <span></span>
-          <h4>READ STORIES <img src={arrow_white} alt="Arrow right" /></h4>
+          <h4>READ STORY <img src={arrow_white} alt="Arrow right" /></h4>
         </div>
       </SectionFor>
 
