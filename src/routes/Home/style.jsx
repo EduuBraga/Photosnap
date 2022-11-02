@@ -139,14 +139,14 @@ export const SectionThree = styled.section`
 
 export const SectionFor = styled.section`
   display: grid;
-  grid-template: auto / auto auto auto auto;
+  grid-template: auto / 25% 25% 25% 25%;
   height: 500px;
 
   div{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 12px;
+    gap: 4px;
     padding: 30px;
 
     color: white;
@@ -168,6 +168,8 @@ export const SectionFor = styled.section`
     span{
       border-bottom: 1px solid white;
       opacity: 0.25;
+      margin-top: 12px;
+      margin-bottom: 16px;
     }
     h4{
       display: flex;
