@@ -39,7 +39,6 @@ export const Button2 = styled.button`
   cursor: pointer;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
 
@@ -90,7 +89,6 @@ export const Button4 = styled.button`
   cursor: pointer;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
 
