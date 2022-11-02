@@ -5,12 +5,14 @@ import { GlobalStyles } from './styles/GlobalStyle/style'
 
 import { Home } from './routes/Home'
 import { Stories } from './routes/Stories'
+import { Features } from './routes/Features'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
         <Routes>
             <Route element={<Home />} path='/' />
             <Route element={<Stories />} path='/stories' />
+            <Route element={<Features />} path='/features' />
         </Routes>
         <GlobalStyles />
     </Router>

@@ -20,10 +20,10 @@ export function Header() {
       </div>
       <Nav>
         <a onClick={() => { navigate('/stories') }}>STORIES</a>
-        <a>FEATURES</a>
-        <a>PRICING</a>
+        <a onClick={() => { navigate('/features') }}>FEATURES</a>
+        <a onClick={() => { navigate('/pricing') }}>PRICING</a>
       </Nav>
-      <Button1>GET AN INVITE</Button1>
+      <Button1 onClick={() => { navigate('/pricing') }}>GET AN INVITE</Button1>
     </Container>
   )
 }

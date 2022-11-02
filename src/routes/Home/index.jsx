@@ -26,7 +26,7 @@ export function Home() {
         <div>
           <h1>CREATE AND SHARE YOUR PHOTO STORIES. </h1>
           <p>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</p>
-          <Button4 onClick={() => { navigate('/stories') }}>GET AN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
+          <Button4 onClick={() => { navigate('/pricing') }}>GET AN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
         </div>
         <div>
           <img src={img1_Section1} alt="Fotógrafo na praia" />

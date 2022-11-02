@@ -60,13 +60,13 @@ export function Footer() {
         <Nav>
           <a onClick={() => { navigate('/') }}>HOME</a>
           <a onClick={() => { navigate('/stories') }}>STORIES</a>
-          <a>FEATURES</a>
-          <a>PRINCING</a>
+          <a onClick={() => { navigate('/features') }}>FEATURES</a>
+          <a onClick={() => { navigate('/pricing') }}>PRINCING</a>
         </Nav>
       </ContainerLeft>
 
       <ContainerRight>
-        <Button4>GET IN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
+        <Button4 onClick={() => { navigate('/pricing') }}>GET IN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
         <p>Copyright 2019. All Rights Reserved</p>
       </ContainerRight>
     </Container>
