@@ -102,8 +102,7 @@ export const Switch = styled.label`
 `
 
 export const SectionThree = styled.section`
-  display: grid;
-  grid-template: auto / 33% 33% 33%;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -121,7 +120,7 @@ export const CardBlackPricing = styled.section`
   color: #ffffff;
   background-color: #000;
   position: relative;
-
+  width: 350px;
 
   p:nth-child(2), span{
     opacity: 0.6;
@@ -166,6 +165,7 @@ export const CardLightPricing = styled.section`
   gap: 18px;
   padding: 56px 40px;
   background-color: #f5f5f5;
+  width: 350px;
 
   p:nth-child(2), span{
     opacity: 0.6;
