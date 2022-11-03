@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 import img1_section3_features from '../../assets/images/img1_section3_features.png'
 
-
 export const Container = styled.div`
   
 `
+
 export const SectionOne = styled.div`
   display: grid;
   grid-template: auto / 45% 55%;

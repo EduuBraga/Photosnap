@@ -6,6 +6,7 @@ import { GlobalStyles } from './styles/GlobalStyle/style'
 import { Home } from './routes/Home'
 import { Stories } from './routes/Stories'
 import { Features } from './routes/Features'
+import { Pricing } from './routes/Pricing'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route element={<Home />} path='/' />
             <Route element={<Stories />} path='/stories' />
             <Route element={<Features />} path='/features' />
+            <Route element={<Pricing />} path='/pricing' />
         </Routes>
         <GlobalStyles />
     </Router>
