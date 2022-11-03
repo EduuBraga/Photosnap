@@ -132,8 +132,8 @@ export const SectionFor = styled.section`
     flex-direction: column;
     justify-content: flex-end;
     gap: 4px;
-    padding: 30px;
 
+    padding: 40px;
     color: white;
     z-index: 10;
     background-position: center;
@@ -141,24 +141,12 @@ export const SectionFor = styled.section`
     background-size: cover;
     position: relative;
     overflow: hidden;
-    transition: overflow 0s, transform 0.3s ease-out;
     cursor: pointer;
-
-    span{
-      border-bottom: 1px solid white;
-      opacity: 0.25;
-      margin-top: 12px;
-      margin-bottom: 16px;
-    }
-    h4{
-      letter-spacing: 2px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      img{
-        width: 28px;
-      }
+    transition: overflow 0s, transform 0.3s ease-out;
+    
+    &:active, &:hover{
+      transform: translateY(-26px);
+      overflow: visible;
     }
 
     &::after{
@@ -169,13 +157,47 @@ export const SectionFor = styled.section`
       height: 6px;
       background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
       position: absolute;
-      bottom: -5px;
+      bottom: -6px;
       left: 0;
     }
 
-    &:active, &:hover{
-      transform: translateY(-20px);
-      overflow: visible;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000000 ;
+      z-index: 1;
+      opacity: 0.3;
+    }
+
+    h3, p, span, h4{
+      z-index: 2;
+    }
+
+    p{
+      font-size: 13px;
+      line-height: 17px;
+    }
+
+    span{
+      border-bottom: 1px solid white;
+      opacity: 0.25;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+
+    h4{
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img{
+        width: 28px;
+      }
     }
   }
 
@@ -209,6 +231,10 @@ export const SectionFive = styled.div`
     justify-content: space-between;
     gap: 16px;
     text-align: center;
+
+    p{
+      opacity: 0.6;
+    }
 
     img{
       margin-bottom: 25px;

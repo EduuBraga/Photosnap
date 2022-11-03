@@ -60,7 +60,7 @@ export const CardsStories = styled.section`
     transition: overflow 0s, transform 0.3s ease-out;
 
     &:active, &:hover{
-      transform: translateY(-20px);
+      transform: translateY(-26px);
       overflow: visible;
     }
 
@@ -69,10 +69,10 @@ export const CardsStories = styled.section`
       z-index: 5;
       display: block;
       width: 100%;
-      height: 5px;
+      height: 6px;
       background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
       position: absolute;
-      bottom: -5px;
+      bottom: -6px;
       left: 0;
     }
 
@@ -94,6 +94,7 @@ export const CardsStories = styled.section`
 
     p{
       font-size: 13px;
+      line-height: 17px;
     }
 
     span{
