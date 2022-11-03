@@ -52,7 +52,7 @@ export const SectionTwo = styled.section`
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 20px;
+  padding: 120px 20px 51px 20px;
 
   p:nth-child(1){
     font-weight: 700;
@@ -81,13 +81,13 @@ export const Switch = styled.label`
       display: flex;
       align-items: center;
       border-radius: 40px;
-      background-color: black;
+      background-color: ${({MonthlyOrYearly})=> MonthlyOrYearly === 'monthly' ? 'var(--lightGray)' : '#000'};
 
       &::before {
         content: "";
         width: 23px;
         height: 23px;
-        background-color: white;
+        background-color: ${({MonthlyOrYearly})=> MonthlyOrYearly === 'monthly' ? '#000' : '#fff'};;
         border-radius: 50%;
         position: absolute;
         right: 3px;
@@ -103,11 +103,11 @@ export const Switch = styled.label`
 
 export const SectionThree = styled.section`
   display: grid;
-  grid-template: auto / 1fr 1fr 1fr;
+  grid-template: auto / 33% 33% 33%;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 65px 165px;
+  padding: 0px 165px 0px 165px;
 `
 
 export const CardBlackPricing = styled.section`
@@ -121,6 +121,7 @@ export const CardBlackPricing = styled.section`
   color: #ffffff;
   background-color: #000;
   position: relative;
+
 
   p:nth-child(2), span{
     opacity: 0.6;
@@ -187,3 +188,6 @@ export const CardLightPricing = styled.section`
   }
 `
 
+export const SectionFor = styled.section`
+  
+`
