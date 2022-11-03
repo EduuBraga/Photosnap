@@ -1,21 +1,19 @@
-import React from "react"
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Button1 } from "../../components/Buttons/style"
+import { Button1 } from "../../components/Buttons/style";
 
-import { Container, Logo, Nav } from "./style"
+import logo from '../../assets/icons/logo.png';
+
+import { Container, Nav } from "./style";
 
 export function Header() {
   let navigate = useNavigate()
 
   return (
     <Container>
-      <div>
-        <Logo>
-          <span></span>
-          <span></span>
-          <span></span>
-        </Logo>
+      <div onClick={() => { navigate('/') }}>
+        <img src={logo} alt="Logo da photosnap" />
         <p>PHOTOSNAP</p>
       </div>
       <Nav>

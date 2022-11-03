@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+import logo from '../../assets/icons/logo.png'
+
 import { Button4 } from "../Buttons/style";
 
 import facebook_white from '../../assets/icons/facebook_white.png';
@@ -15,7 +17,7 @@ import pinterest_color from '../../assets/icons/pinterest_color.png';
 import instagram_color from '../../assets/icons/instagram_color.png';
 import arrow_white from '../../assets/icons/arrow_white.png';
 
-import { Container, ContainerRight, ContainerLeft, Logo, Nav, MidiasSociais, ContainerLogoAndMidia } from "./style";
+import { Container, ContainerRight, ContainerLeft, Nav, MidiasSociais, ContainerLogoAndMidia } from "./style";
 
 export function Footer() {
   let navigate = useNavigate()
@@ -24,35 +26,31 @@ export function Footer() {
     <Container>
       <ContainerLeft>
         <ContainerLogoAndMidia>
-          <div>
-            <Logo>
-              <span></span>
-              <span></span>
-              <span></span>
-            </Logo>
+          <div onClick={() => { navigate('/') }}>
+            <img src={logo} alt="Logo da photosnap" />
             <p>PHOTOSNAP</p>
           </div>
 
           <MidiasSociais>
             <div>
-              <img src={facebook_white} alt="Ícone facebook" />
-              <img src={facebook_color} alt="Ícone facebook" />
+              <img src={facebook_white} alt="Ícone facebook branco" />
+              <img src={facebook_color} alt="Ícone facebook colorido" />
             </div>
             <div>
-              <img src={youtube_white} alt="ícone Youtube" />
-              <img src={youtube_color} alt="ícone Youtube" />
+              <img src={youtube_white} alt="ícone Youtube branco" />
+              <img src={youtube_color} alt="ícone Youtube colorido" />
             </div>
             <div>
-              <img src={twitter_white} alt="Ícone twitter" />
-              <img src={twitter_color} alt="Ícone twitter" />
+              <img src={twitter_white} alt="Ícone twitter branco" />
+              <img src={twitter_color} alt="Ícone twitter colorido" />
             </div>
             <div>
-              <img src={pinterest_white} alt="Ícone pinterest" />
-              <img src={pinterest_color} alt="Ícone pinterest" />
+              <img src={pinterest_white} alt="Ícone pinterest branco" />
+              <img src={pinterest_color} alt="Ícone pinterest colorido" />
             </div>
             <div>
-              <img src={instagram_white} alt="Ícone instagram" />
-              <img src={instagram_color} alt="Ícone instagram" />
+              <img src={instagram_white} alt="Ícone instagram branco" />
+              <img src={instagram_color} alt="Ícone instagram colorido" />
             </div>
           </MidiasSociais>
         </ContainerLogoAndMidia>
