@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { Button1, Button3, Button4 } from "../../components/Buttons/style";
 
-import { Container, SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, Switch, SectionFor } from "./style";
-import { Button1, Button3 } from "../../components/Buttons/style";
+import arrow_white from "../../assets/icons/arrow_white.png";
+import check from "../../assets/icons/check.png";
+
+import { Container, SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, Switch, SectionFor, SectionFive } from "./style";
 
 export function Pricing() {
   const [MonthlyOrYearly, setMonthlyOrYealy] = useState('monthly')
@@ -20,9 +23,9 @@ export function Pricing() {
       setBusinessPrice('$99.90')
     } else {
       setMonthlyOrYealy('yearly')
-      setBasicPrice('$190.90')
-      setProPrice('$390.90')
-      setBusinessPrice('$990.90')
+      setBasicPrice('$190.00')
+      setProPrice('$390.00')
+      setBusinessPrice('$990.00')
     }
   }
 
@@ -85,8 +88,75 @@ export function Pricing() {
         </SectionThree>
 
         <SectionFor>
-          
+          <h1>COMPARE</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>THE FEATURES</th>
+                <th>BASIC</th>
+                <th>PRO</th>
+                <th>BUSINESS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UNLIMITED STORY POSTING</td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>UNLIMITED PHOTO UPLOAD</td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>EMBEDDING CUSTOM CONTENT</td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>CUSTOMIZE METADATA</td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>ADVANCED METRICS</td>
+                <td></td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>PHOTO DOWNLOADS</td>
+                <td></td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>SEARCH ENGINE INDEXING</td>
+                <td></td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+              <tr>
+                <td>CUSTOM ANALYTICS</td>
+                <td></td>
+                <td></td>
+                <td><img src={check} alt="icon check" /></td>
+              </tr>
+            </tbody>
+          </table>
         </SectionFor>
+
+        <SectionFive>
+          <div>
+            <h1>WE´RE IN BETA. <br /> GET YOUR INVITE <br /> TODAY!</h1>
+          </div>
+          <Button4 onClick={() => { navigate('/pricing') }}>GET AN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
+        </SectionFive>
       </main>
 
       <Footer />

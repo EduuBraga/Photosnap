@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 import img1_section1_pricing from '../../assets/images/img1_section1_pricing.png'
+import img1_section3_features from '../../assets/images/img1_section3_features.png'
 
 export const Container = styled.div`
   
 `
-
 
 export const SectionOne = styled.section`
   display: grid;
@@ -189,5 +189,87 @@ export const CardLightPricing = styled.section`
 `
 
 export const SectionFor = styled.section`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 40px 160px 40px;
+
+  h1{
+    margin-bottom: 36px;
+  }
+
+  table{
+    thead{
+      tr{
+        display: grid;
+        grid-template: auto /3fr 1fr 1fr 1fr;
+        border-bottom: 1px solid #000;
+
+        th:nth-child(1){
+          justify-content: flex-start;
+        }
+
+        th{
+          padding: 23.5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    tbody{
+      tr{
+        display: grid;
+        grid-template: auto /3fr 1fr 1fr 1fr;
+        border-bottom: 1px solid #dfdfdf;
+
+        td:nth-child(1){
+          justify-content: flex-start;
+        }
+
+        td{
+          padding: 23.5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    
+
+    img{
+      width: 16px;
+    }
+  }
+`
+
+export const SectionFive = styled.section`
+color: white;
+  padding: 68px 165px;
+  position: relative;
+  background-image: url(${img1_section3_features}) ;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000 ;
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  div, button{
+    z-index: 2;
+  }
 `
