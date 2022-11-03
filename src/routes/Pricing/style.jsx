@@ -52,7 +52,7 @@ export const SectionTwo = styled.section`
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 120px 20px 51px 20px;
+  padding: 120px 20px 48px 20px;
 
   p:nth-child(1){
     font-weight: 700;
@@ -117,7 +117,7 @@ export const CardBlackPricing = styled.section`
   align-items: center;
   text-align: center;
   gap: 18px;
-  padding: 56px 40px;
+  padding: 56px 40px 71px 40px;
   color: #ffffff;
   background-color: #000;
   position: relative;
@@ -148,13 +148,13 @@ export const CardBlackPricing = styled.section`
   }
 
   ::after{
-      content: '';
-      background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
-      height: 5px;
-      width: 100%;
-      position: absolute;
-      top: -5px;
-    }
+    content: '';
+    background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+  }
 `
 
 export const CardLightPricing = styled.section`
@@ -201,6 +201,8 @@ export const SectionFor = styled.section`
   table{
     thead{
       tr{
+        font-size: 12px;
+        font-weight: 700;
         display: grid;
         grid-template: auto /3fr 1fr 1fr 1fr;
         border-bottom: 1px solid #000;
@@ -221,6 +223,8 @@ export const SectionFor = styled.section`
 
     tbody{
       tr{
+        font-size: 12px;
+        font-weight: 700;
         display: grid;
         grid-template: auto /3fr 1fr 1fr 1fr;
         border-bottom: 1px solid #dfdfdf;
@@ -247,7 +251,7 @@ export const SectionFor = styled.section`
 `
 
 export const SectionFive = styled.section`
-color: white;
+  color: white;
   padding: 68px 165px;
   position: relative;
   background-image: url(${img1_section3_features}) ;
@@ -257,7 +261,7 @@ color: white;
   justify-content: space-between;
   align-items: center;
 
-  ::before{
+  &::before{
     content: '';
     position: absolute;
     top: 0;
@@ -267,6 +271,16 @@ color: white;
     background-color: #000000 ;
     z-index: 1;
     opacity: 0.6;
+  }
+
+  &::after{
+    content: '';
+    background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
+    height: 100%;
+    width: 6px;
+    position: absolute;
+    left: 0px;
+    z-index: 5;
   }
 
   div, button{

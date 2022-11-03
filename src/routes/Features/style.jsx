@@ -85,7 +85,7 @@ export const SectionThree = styled.section`
   justify-content: space-between;
   align-items: center;
 
-  ::before{
+  &::before{
     content: '';
     position: absolute;
     top: 0;
@@ -95,6 +95,16 @@ export const SectionThree = styled.section`
     background-color: #000000 ;
     z-index: 1;
     opacity: 0.6;
+  }
+
+  &  &::after{
+    content: '';
+    background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
+    height: 100%;
+    width: 6px;
+    position: absolute;
+    left: 0px;
+    z-index: 5;
   }
 
   div, button{
