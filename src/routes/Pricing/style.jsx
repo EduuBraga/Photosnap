@@ -6,6 +6,7 @@ export const Container = styled.div`
   
 `
 
+
 export const SectionOne = styled.section`
   display: grid;
   grid-template: auto / 40% 60%;
@@ -47,5 +48,142 @@ export const SectionOne = styled.section`
 `
 
 export const SectionTwo = styled.section`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+
+  p:nth-child(1){
+    font-weight: 700;
+    opacity:${({MonthlyOrYearly})=> MonthlyOrYearly === 'monthly' ? ' 1' : '0.5'};
+  }
+  p:nth-child(3){
+    font-weight: 700;
+    opacity:${({MonthlyOrYearly})=> MonthlyOrYearly === 'yearly' ? ' 1' : '0.5'};
+  }
 `
+
+export const Switch = styled.label`
+  cursor: pointer;
+
+  div{
+    width: 60px;
+    height: 30px;
+    position: relative;
+
+    span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      background-color: black;
+
+      &::before {
+        content: "";
+        width: 23px;
+        height: 23px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        right: 3px;
+        transition: .5s all ease;
+      }
+    }
+
+    input:checked + ::before {
+      transform: translateX(-30px);
+    }
+  }
+`
+
+export const SectionThree = styled.section`
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 65px 165px;
+`
+
+export const CardBlackPricing = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  padding: 56px 40px;
+  color: #ffffff;
+  background-color: #000;
+  position: relative;
+
+  p:nth-child(2), span{
+    opacity: 0.6;
+  }
+
+  button{
+    width: 110%;
+  }
+
+  h2{
+    margin-top: 26px;
+  }
+
+  div{
+    margin-bottom: 22px;
+    margin-top: 22px;
+
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+      font-weight: 700;
+    }
+  }
+
+  ::after{
+      content: '';
+      background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: -5px;
+    }
+`
+
+export const CardLightPricing = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  padding: 56px 40px;
+  background-color: #f5f5f5;
+
+  p:nth-child(2), span{
+    opacity: 0.6;
+  }
+
+  button{
+    width: 110%;
+  }
+
+  div{
+    margin-bottom: 22px;
+    margin-top: 22px;
+
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 4.16667px;
+      font-weight: 700;
+    }
+  }
+`
+
