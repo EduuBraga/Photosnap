@@ -14,13 +14,13 @@ import boost from "../../assets/icons/boost.jpg";
 import drop_img from "../../assets/icons/drop_img.jpg";
 import arrow_white from "../../assets/icons/arrow_white.png";
 
-import { Container, SectionOne, SectionThree, SectionTwo } from "./style";
+import { SectionOne, SectionThree, SectionTwo } from "./style";
 
 export function Features() {
   let navigate = useNavigate()
 
   return (
-    <Container>
+    <>
       <Header />
 
       <main>
@@ -78,6 +78,6 @@ export function Features() {
       </main>
 
       <Footer />
-    </Container>
+    </>
   )
 }

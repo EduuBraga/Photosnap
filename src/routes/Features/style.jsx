@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-import img1_section3_features from '../../assets/images/img1_section3_features.png'
+import img1_section3_features from '../../assets/images/img1_section3_features.png';
 
-export const Container = styled.div`
-  
-`
 
 export const SectionOne = styled.div`
   display: grid;
@@ -59,7 +56,7 @@ export const SectionTwo = styled.section`
   justify-content: center;
   align-content: center;
   gap: 30px;
-  padding: 116px;
+  padding:  116px 116px 76px  116px;
 
   article{
     display: flex;
@@ -68,10 +65,11 @@ export const SectionTwo = styled.section`
     justify-content: center;
     gap: 16px;
     text-align: center;
+    padding-bottom: 84px;
 
     img{
-      margin-bottom: 1rem;
-      width: 80px;
+      margin-bottom: 32px;
+      width: 71px;
     }
   }
 `
