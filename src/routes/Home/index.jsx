@@ -14,13 +14,13 @@ import midias_sociais from "../../assets/icons/midias_sociais.jpg";
 import infinite from "../../assets/icons/infinite.jpg";
 import media_screen from "../../assets/icons/media_screen.jpg";
 
-import { Container, SectionOne, SectionTwo, SectionThree, SectionFor, SectionFive } from "./style";
+import { SectionOne, SectionTwo, SectionThree, SectionFor, SectionFive } from "./style";
 
 export function Home() {
   let navigate = useNavigate()
   
   return (
-    <Container>
+    <>
       <Header />
       <SectionOne>
         <div>
@@ -100,6 +100,6 @@ export function Home() {
         </div>
       </SectionFive>
       <Footer />
-    </Container>
+    </>
   )
 };

@@ -1,13 +1,10 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 import img1_section4 from '../../assets/images/img1_section4_home.png'
 import img2_section4 from '../../assets/images/img2_section4_home.png'
 import img3_section4 from '../../assets/images/img3_section4_home.png'
 import img4_section4 from '../../assets/images/img4_section4_home.png'
 
-export const Container = styled.div`
-  
-`
 export const SectionOne = styled.section`
   display: grid;
   grid-template: auto / 45% 55%;
@@ -18,14 +15,10 @@ export const SectionOne = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 21;
+    gap: 21px;
     padding: 111px;
     color: white;
     background-color: black;
-
-    h1{
-      letter-spacing: 4.16667px;
-    }
 
     P{
       opacity: 0.6;
@@ -74,14 +67,10 @@ export const SectionTwo = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 21;
+    gap: 21px;
     padding: 111px;
     color: black;
     background-color: white;
-    
-    h1{
-      letter-spacing: 4.16667px;
-    }
 
     P{
       opacity: 0.6;
@@ -104,14 +93,10 @@ export const SectionThree = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 21;
+    gap: 21px;
     padding: 111px;
     color: black;
     background-color: white;
-
-    h1{
-      letter-spacing: 4.16667px;
-    }
 
     P{
       opacity: 0.6;
@@ -156,15 +141,9 @@ export const SectionFor = styled.section`
     background-size: cover;
     position: relative;
     overflow: hidden;
-    transition: overflow 0.1s, transform 0.3s ease-out;
+    transition: overflow 0s, transform 0.3s ease-out;
     cursor: pointer;
 
-    h3{
-      margin: 0px;
-    }
-    p{
-      margin:0px;
-    }
     span{
       border-bottom: 1px solid white;
       opacity: 0.25;
@@ -176,7 +155,6 @@ export const SectionFor = styled.section`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0px;
 
       img{
         width: 28px;
@@ -188,7 +166,7 @@ export const SectionFor = styled.section`
       z-index: 5;
       display: block;
       width: 100%;
-      height: 5px;
+      height: 6px;
       background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
       position: absolute;
       bottom: -5px;
@@ -232,16 +210,9 @@ export const SectionFive = styled.div`
     gap: 16px;
     text-align: center;
 
-    h3{
-      margin: 0px;
-    }
-    p{
-      margin: 0px;
-    }
-
     img{
       margin-bottom: 25px;
-      width: 74px;
+      width: 71px;
     }
   }
 `
