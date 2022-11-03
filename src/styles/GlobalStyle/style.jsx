@@ -21,26 +21,34 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: content-box;
   }
 
+  p{
+    margin: 0px;
+  }
+
   h1{
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 4.16667px;
+    margin: 0px;
   }
 
   h2{
     font-size:24px;
     line-height: 25px;
+    margin: 0px;
   }
 
   h3{
     font-size:18px;
     line-height: 25px;
+    margin: 0px;
   }
 
   h4{
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
+    margin: 0px;
   }
 
   a{
