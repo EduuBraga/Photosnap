@@ -11,7 +11,7 @@ import { Container, Nav, Logo, ContainerMenu, ImgMenu, ContainerMenuTablet } fro
 
 export function Header() {
   let navigate = useNavigate()
-  const [visibleMenu, setVisibleMenu] = useState(true)
+  const [visibleMenu, setVisibleMenu] = useState(false)
 
   function toggleVisibleMenu() {
     visibleMenu ? setVisibleMenu(false) : setVisibleMenu(true)
