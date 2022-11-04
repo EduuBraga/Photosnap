@@ -58,6 +58,14 @@ export const SectionOne = styled.section`
         z-index: 5;
       }
     }
+    
+    h1{
+      @media screen and (max-width: 426px){
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 3.33333px;
+      }
+    }
 
     P{
       opacity: 0.6;
@@ -194,8 +202,9 @@ export const SectionFor = styled.section`
   @media screen and (max-width: 768px){
     grid-template: 500px 500px / 50% 50%;
   }
+  
   @media screen and (max-width: 426px){
-    grid-template: 375px 375px 375px 375px / auto;
+    grid-template: 400px 400px 400px 400px / auto;
   }
 
   div{

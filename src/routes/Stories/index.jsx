@@ -22,7 +22,7 @@ import img2_section5_stories from '../../assets/images/img2_section5_stories.png
 import img3_section5_stories from '../../assets/images/img3_section5_stories.png';
 import img4_section5_stories from '../../assets/images/img4_section5_stories.png';
 
-import { SectionOne, CardsStories } from "./style";
+import { SectionOne, CardsStories, ContainerImagem } from "./style";
 
 export function Stories() {
   return (
@@ -31,6 +31,7 @@ export function Stories() {
 
       <main>
         <SectionOne>
+          <ContainerImagem></ContainerImagem>
           <article>
             <h4>LAST MONTH’S FEATURED STORY</h4>
             <h1>HAZY FULL MOON OF APPALACHIA</h1>

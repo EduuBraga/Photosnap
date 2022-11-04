@@ -7,19 +7,36 @@ export const SectionOne = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 112px 120px;                                                                                                                                                                                                                                                                                                  
 
-  *{
-    margin: 0px;
+  @media screen and (max-width: 426px){
+    background-image: none;
+    background-color: #000;
   }
 
   article{
     width: 387px;
-    height: 406px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     color: white;
+    padding: 112px 120px;    
+  
+    @media screen and (max-width: 768px){
+      padding: 122px 30px;   
+    }
+
+    @media screen and (max-width: 426px){
+      padding: 48px 28px;   
+      width: auto;
+    }
+
+    h1{
+      @media screen and (max-width: 426px){
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 3.33333px;
+      }
+    }
 
     div{
       display: flex;
@@ -38,14 +55,30 @@ export const SectionOne = styled.section`
   }
 `
 
+export const ContainerImagem = styled.div`
+  background-image: url(${img1_Section1_stories});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 427px){
+    display: none;
+  }
+  @media screen and (max-width: 426px){
+    height: 270px;
+  }
+`
+
 export const CardsStories = styled.section`
   display: grid;
-  grid-template: auto / 25% 25% 25% 25%;
-  height: 500px;
+  grid-template: 500px / 25% 25% 25% 25%;
 
   @media screen and (max-width: 768px){
-    grid-template: auto auto / 50% 50%;
-    height: 1000px;
+    grid-template: 500px 500px / 50% 50%;
+  }
+
+  @media screen and (max-width: 426px){
+    grid-template: 400px 400px 400px 400px / auto;
   }
 
   div{
