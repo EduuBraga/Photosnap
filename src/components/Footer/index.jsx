@@ -17,7 +17,7 @@ import pinterest_color from '../../assets/icons/pinterest_color.png';
 import instagram_color from '../../assets/icons/instagram_color.png';
 import arrow_white from '../../assets/icons/arrow_white.png';
 
-import { Container, ContainerRight, ContainerLeft, ContainerLeftTwo, Nav, MidiasSociais, ContainerLogoAndMidia, Logo, ContainerLogoAndNav } from "./style";
+import { Container, ContainerRight, ContainerLeft, ContainerLeftTwo, Nav, MidiasSociais, ContainerLogoAndMidia, ContainerBefore, Logo, ContainerLogoAndNav, ContainerMobileScreen } from "./style";
 
 export function Footer() {
   let navigate = useNavigate()
@@ -100,13 +100,54 @@ export function Footer() {
             <img src={instagram_color} alt="Ícone instagram colorido" />
           </div>
         </MidiasSociais>
-
       </ContainerLeftTwo>
 
       <ContainerRight>
         <Button4 onClick={() => { navigate('/pricing') }}>GET IN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
         <p>Copyright 2019. All Rights Reserved</p>
       </ContainerRight>
+
+      <ContainerMobileScreen>
+        <Logo onClick={() => { navigate('/') }}>
+          <img src={logo} alt="Logo da photosnap" />
+          <p>PHOTOSNAP</p>
+        </Logo>
+
+        <MidiasSociais>
+          <div>
+            <img src={facebook_white} alt="Ícone facebook branco" />
+            <img src={facebook_color} alt="Ícone facebook colorido" />
+          </div>
+          <div>
+            <img src={youtube_white} alt="ícone Youtube branco" />
+            <img src={youtube_color} alt="ícone Youtube colorido" />
+          </div>
+          <div>
+            <img src={twitter_white} alt="Ícone twitter branco" />
+            <img src={twitter_color} alt="Ícone twitter colorido" />
+          </div>
+          <div>
+            <img src={pinterest_white} alt="Ícone pinterest branco" />
+            <img src={pinterest_color} alt="Ícone pinterest colorido" />
+          </div>
+          <div>
+            <img src={instagram_white} alt="Ícone instagram branco" />
+            <img src={instagram_color} alt="Ícone instagram colorido" />
+          </div>
+        </MidiasSociais>
+
+        <Nav>
+          <a onClick={() => { navigate('/') }}>HOME</a>
+          <a onClick={() => { navigate('/stories') }}>STORIES</a>
+          <a onClick={() => { navigate('/features') }}>FEATURES</a>
+          <a onClick={() => { navigate('/pricing') }}>PRINCING</a>
+        </Nav>
+
+        <ContainerBefore>
+          <Button4 onClick={() => { navigate('/pricing') }}>GET IN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
+          <p>Copyright 2019. All Rights Reserved</p>
+        </ContainerBefore>
+      </ContainerMobileScreen>
     </Container>
   )
 };

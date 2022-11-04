@@ -5,10 +5,14 @@ export const Container = styled.footer`
   color: white;
   display: flex;
   justify-content: space-between;
+  gap: 100px;
   padding: 65px 150px;
 
   @media screen and (max-width: 768px){
     padding: 65px 40px;
+  }
+  @media screen and (max-width: 580px){
+    padding: 56px 33px;
   }
 `
 
@@ -53,6 +57,9 @@ export const ContainerLeftTwo = styled.div`
   @media screen and (max-width: 768px){
     display: flex;
   }
+  @media screen and (max-width: 581px){
+    display: none;
+  }
 `
 
 export const ContainerLogoAndNav = styled.div`
@@ -75,6 +82,10 @@ export const MidiasSociais = styled.div`
   align-items: center;
   justify-content: center;
   gap: 13px;
+
+  @media screen and (max-width: 580px){
+    padding-top: 32px;
+  }
 
   div{
     display: flex;
@@ -119,6 +130,13 @@ export const Nav = styled.nav`
     gap: 26px;
   }
 
+  @media screen and (max-width: 580px){
+    flex-direction: column;
+    gap: 19px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+
   a{
     font-size: 12px;
     letter-spacing: 2px;
@@ -137,6 +155,33 @@ export const ContainerRight = styled.div`
   align-items: flex-end;
   justify-content: space-between;
   gap: 86px;
+
+  @media screen and (max-width: 581px){
+    display: none;
+  }
+
+  p{
+    opacity: 0.5;
+  }
+`
+
+export const ContainerMobileScreen = styled.div`
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center ;
+
+  @media screen and (max-width: 580px){
+    display: flex;
+  }
+`
+
+export const ContainerBefore = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 
   p{
     opacity: 0.5;
