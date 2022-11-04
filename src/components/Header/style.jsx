@@ -18,7 +18,7 @@ export const Logo = styled.div`
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  z-index: 15;
+
 
   img{
     width: 25px;
@@ -71,7 +71,7 @@ export const ContainerMenu = styled.section`
 export const ImgMenu = styled.img`
   width: 20px;
   justify-self: flex-end;
-  z-index: 15;
+  z-index: 5;
   cursor: pointer;
 
   &:active{

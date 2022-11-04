@@ -34,9 +34,9 @@ export function Header() {
       </ContainerMenu>
 
       {visibleMenu ? (
-        <ImgMenu onClick={toggleVisibleMenu} src={menu} alt="ícone do menu" />
-      ) : (
         <ImgMenu onClick={toggleVisibleMenu} src={close} alt="ícone do menu" />
+      ) : (
+        <ImgMenu onClick={toggleVisibleMenu} src={menu} alt="ícone do menu" />
       )}
 
       <ContainerMenuTablet isVisible={visibleMenu}>
