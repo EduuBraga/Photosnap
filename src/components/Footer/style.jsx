@@ -6,12 +6,60 @@ export const Container = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 65px 150px;
+
+  @media screen and (max-width: 768px){
+    padding: 65px 40px;
+  }
 `
 
 export const ContainerLeft = styled.div`
-  display: flex;
+  display: none;
   justify-content: space-between;
   gap: 80px;
+
+  @media screen and (min-width: 769px){
+    display: flex;
+  }
+`
+
+export const Logo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+
+  @media screen and (max-width: 768px){
+    justify-content: flex-start;
+  }
+
+  img{
+    width: 25px;
+  }
+
+  p{
+    font-weight: 700;
+    font-size: 20px;
+  } 
+`
+
+export const ContainerLeftTwo = styled.div`
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 72px;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+  }
+`
+
+export const ContainerLogoAndNav = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 `
 
 export const ContainerLogoAndMidia = styled.div`
@@ -20,23 +68,6 @@ export const ContainerLogoAndMidia = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 80px;
-
-  div:nth-child(1){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 8px;
-
-    img{
-      width: 25px;
-    }
-
-    p{
-      font-weight: 700;
-      font-size: 20px;
-    } 
-  }
 `
 
 export const MidiasSociais = styled.div`
@@ -82,6 +113,11 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: flex-start;
   gap: 19px;
+
+  @media screen and (max-width: 768px){
+    flex-direction: row;
+    gap: 26px;
+  }
 
   a{
     font-size: 12px;
