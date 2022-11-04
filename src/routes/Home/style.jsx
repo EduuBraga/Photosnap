@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+import img1_Section1 from "../../assets/images/img1_section1_home.png";
+import img1_Section2 from "../../assets/images/img1_section2_home.png";
+import img1_Section3 from "../../assets/images/img1_section3_home.png";
 import img1_section4 from '../../assets/images/img1_section4_home.png'
 import img2_section4 from '../../assets/images/img2_section4_home.png'
 import img3_section4 from '../../assets/images/img3_section4_home.png'
@@ -8,10 +11,14 @@ import img4_section4 from '../../assets/images/img4_section4_home.png'
 export const SectionOne = styled.section`
   display: grid;
   grid-template: auto / 45% 55%;
-  height: 650px;
 
   @media screen and (max-width: 768px){
     grid-template: auto / 65% 35%;
+  }
+
+  @media screen and (max-width: 426px){
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   div:nth-child(1){
@@ -23,6 +30,34 @@ export const SectionOne = styled.section`
     padding: 111px;
     color: white;
     background-color: black;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px){
+      padding: 172px 48px;
+    }
+
+    @media screen and (max-width: 426px){
+      padding: 72px 24px 72px 33px;
+    }
+
+    &::after{
+      content: '';
+      background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
+      height: 60%;
+      width: 6px;
+      position: absolute;
+      left: 0px;
+      z-index: 5;
+
+      @media screen and (max-width: 426px){
+        height: 6px;
+        width: 40%;
+        top: 0;
+        left: 20px;
+        z-index: 5;
+      }
+    }
 
     P{
       opacity: 0.6;
@@ -35,15 +70,13 @@ export const SectionOne = styled.section`
   }
 
   div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    background-image: url(${img1_Section1});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+    @media screen and (max-width: 426px){
+      height: 270px;
     }
   }
 `
@@ -51,22 +84,24 @@ export const SectionOne = styled.section`
 export const SectionTwo = styled.section`
   display: grid;
   grid-template: auto / 55% 45%;
-  height: 650px;
 
   @media screen and (max-width: 768px){
     grid-template: auto / 35% 65%;
   }
+
+  @media screen and (max-width: 426px){
+    display: flex;
+    flex-direction: column;
+  }
   
   div:nth-child(1){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+    background-image: url(${img1_Section2});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 426px){
+      height: 270px;
     }
   }
 
@@ -79,6 +114,14 @@ export const SectionTwo = styled.section`
     padding: 111px;
     color: black;
     background-color: white;
+
+    @media screen and (max-width: 768px){
+      padding: 172px 48px;
+    }
+
+    @media screen and (max-width: 426px){
+      padding: 72px 24px 72px 33px;
+    }
 
     P{
       opacity: 0.6;
@@ -94,10 +137,14 @@ export const SectionTwo = styled.section`
 export const SectionThree = styled.section`
   display: grid;
   grid-template: auto / 45% 55%;
-  height: 650px;
 
   @media screen and (max-width: 768px){
     grid-template: auto / 65% 35%;
+  }
+
+  @media screen and (max-width: 426px){
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   div:nth-child(1){
@@ -110,6 +157,14 @@ export const SectionThree = styled.section`
     color: black;
     background-color: white;
 
+    @media screen and (max-width: 768px){
+      padding: 172px 48px;
+    }
+
+    @media screen and (max-width: 426px){
+      padding: 72px 24px 72px 33px;
+    }
+
     P{
       opacity: 0.6;
     }
@@ -121,27 +176,26 @@ export const SectionThree = styled.section`
   }
 
   div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+    background-image: url(${img1_Section3});
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+
+    @media screen and (max-width: 426px){
+      height: 270px;
     }
   }
 `
 
 export const SectionFor = styled.section`
   display: grid;
-  grid-template: auto / 25% 25% 25% 25%;
-  height: 500px;
+  grid-template: 500px / 25% 25% 25% 25%;
 
   @media screen and (max-width: 768px){
-    grid-template: auto auto / 50% 50%;
-    height: 1000px;
+    grid-template: 500px 500px / 50% 50%;
+  }
+  @media screen and (max-width: 426px){
+    grid-template: 375px 375px 375px 375px / auto;
   }
 
   div{

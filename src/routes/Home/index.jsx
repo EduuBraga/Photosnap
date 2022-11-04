@@ -30,15 +30,11 @@ export function Home() {
             <p>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</p>
             <Button4 onClick={() => { navigate('/pricing') }}>GET AN INVITE <img src={arrow_white} alt="Arrow right" /></Button4>
           </div>
-          <div>
-            <img src={img1_Section1} alt="Fotógrafo na praia" />
-          </div>
+          <div></div>
         </SectionOne>
 
         <SectionTwo>
-          <div>
-            <img src={img1_Section2} alt="Laptop" />
-          </div>
+          <div></div>
           <div>
             <h1>BEAUTIFUL STORIES EVERY TIME</h1>
             <p>We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</p>
@@ -52,9 +48,7 @@ export function Home() {
             <p>Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. </p>
             <Button2 onClick={() => { navigate('/stories') }}>VIEW THE STORIES <img src={arrow_black} alt="Arrow right" /></Button2>
           </div>
-          <div>
-            <img src={img1_Section3} alt="Homem com camera com fundo preto" />
-          </div>
+          <div></div>
         </SectionThree>
 
         <SectionFor>
