@@ -87,7 +87,7 @@ export const SectionTwo = styled.section`
 `
 
 export const SectionThree = styled.section`
-  color: white;
+  color: #fff;
   padding: 68px 165px;
   position: relative;
   background-image: url(${img1_section3_features}) ;

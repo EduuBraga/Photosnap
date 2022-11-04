@@ -3,14 +3,14 @@ import styled from "styled-components"
 import img1_section1_pricing from '../../assets/images/img1_section1_pricing.png'
 import img1_section3_features from '../../assets/images/img1_section3_features.png'
 
-export const Container = styled.div`
-  
-`
-
 export const SectionOne = styled.section`
   display: grid;
   grid-template: auto / 40% 60%;
   height: 490px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto / 70% 30%;
+  }
 
   div:nth-child(1){
     background-color: #000000;
@@ -18,6 +18,10 @@ export const SectionOne = styled.section`
     display: flex;
     align-items: center;
     padding: 100px;
+
+    @media screen and (max-width: 768px){
+      padding: 54px;
+    }
 
     article{
       display: flex;
@@ -32,10 +36,14 @@ export const SectionOne = styled.section`
       ::after{
         content: '';
         background-image: var(--mainAccent);
-        height: 12em;
-        width: 5px;
+        height: 100%;
+        width: 6px;
         position: absolute;
         left: -100px;
+
+        @media screen and (max-width: 768px){
+          left: -54px;
+        }
       }
     }
   }
@@ -53,6 +61,10 @@ export const SectionTwo = styled.section`
   align-items: center;
   gap: 30px;
   padding: 120px 20px 48px 20px;
+
+  @media screen and (max-width: 768px){
+    padding: 112px 20px 0px 20px;
+  }
 
   p:nth-child(1){
     font-weight: 700;
@@ -107,43 +119,36 @@ export const SectionThree = styled.section`
   justify-content: center;
   gap: 30px;
   padding: 0px 165px 0px 165px;
-`
 
-export const CardBlackPricing = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 18px;
-  padding: 56px 40px 71px 40px;
-  color: #ffffff;
-  background-color: #000;
-  position: relative;
-  width: 350px;
+  @media screen and (max-width: 768px){
+    gap: 24px;
+    flex-direction: column;
+    padding: 40px;
+  }
 
   p:nth-child(2), span{
     opacity: 0.6;
   }
 
-  button{
-    width: 110%;
-  }
-
   h2{
-    margin-top: 26px;
-  }
-
-  div{
-    margin-bottom: 22px;
-    margin-top: 22px;
-
-    p{
-      font-size: 40px;
-      line-height: 48px;
-      letter-spacing: 4.16667px;
-      font-weight: 700;
+    @media screen and (max-width: 768px){
+      align-self: flex-start;
     }
+  }
+`
+
+export const CardBlackPricing = styled.section`
+  padding: 56px 40px;
+  color: white;
+  background-color: #000;
+  position: relative;
+
+  @media screen and (max-width: 768px){
+    display: grid;
+    grid-template: auto / 50% 50%;
+    flex-direction: row;
+    width: auto;
+    padding: 40px;
   }
 
   ::after{
@@ -153,31 +158,53 @@ export const CardBlackPricing = styled.section`
     width: 100%;
     position: absolute;
     top: -5px;
+    left: 0;
+
+    @media screen and (max-width: 768px){
+      height: 100%;
+      width: 6px;
+      top: 0;
+    }
   }
 `
 
 export const CardLightPricing = styled.section`
+  padding: 56px 40px;
+  background-color: #f5f5f5;
+
+  @media screen and (max-width: 768px){
+    display: grid;
+    grid-template: auto / 50% 50%;
+    flex-direction: row;
+    width: auto;
+    padding: 40px;
+  }
+`
+
+export const ContentOneCardPricing = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 18px;
-  padding: 56px 40px;
-  background-color: #f5f5f5;
-  width: 350px;
 
-  p:nth-child(2), span{
-    opacity: 0.6;
+  @media screen and (max-width: 768px){
+    align-items: center;
+    text-align: left;
   }
 
   button{
-    width: 110%;
+    width: 100%;
   }
 
   div{
     margin-bottom: 22px;
     margin-top: 22px;
+
+    @media screen and (max-width: 768px){
+      display: none;
+    }
 
     p{
       font-size: 40px;
@@ -185,6 +212,36 @@ export const CardLightPricing = styled.section`
       letter-spacing: 4.16667px;
       font-weight: 700;
     }
+  }
+`
+
+export const ContentTwoCardPricing = styled.div`
+  margin-bottom: 22px;
+  margin-top: 22px;
+
+  @media screen and (min-width: 769px){
+    display: none;
+  }
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0px;
+  }
+
+  h2{
+    @media screen and (max-width: 768px){
+      align-self: flex-start;
+    }
+  }
+
+  p{
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    font-weight: 700;
   }
 `
 
@@ -199,23 +256,26 @@ export const SectionFor = styled.section`
   }
 
   table{
+    border-collapse: collapse;
+
     thead{
       tr{
         font-size: 12px;
         font-weight: 700;
-        display: grid;
-        grid-template: auto /3fr 1fr 1fr 1fr;
-        border-bottom: 1px solid #000;
-
+        border-bottom: 1px solid #000 ;
+       
         th:nth-child(1){
-          justify-content: flex-start;
+          text-align: left;
+          padding: 23.5px 100px 23.5px 23.5px;
+          @media screen and (max-width: 768px){
+            padding: 23px;
+          }
         }
-
+      
         th{
           padding: 23.5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          line-height: 15.62px;
+          text-align: center;
           letter-spacing: 2px;
         }
       }
@@ -225,25 +285,26 @@ export const SectionFor = styled.section`
       tr{
         font-size: 12px;
         font-weight: 700;
-        display: grid;
-        grid-template: auto /3fr 1fr 1fr 1fr;
         border-bottom: 1px solid #dfdfdf;
 
         td:nth-child(1){
-          justify-content: flex-start;
+          text-align: left;
+          padding: 23.5px 100px 23.5px 23.5px;
+          
+          @media screen and (max-width: 768px){
+            padding: 23px;
+          }
         }
 
         td{
           padding: 23.5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          line-height: 15.62px;
+          text-align: center;
           letter-spacing: 2px;
         }
       }
     }
     
-
     img{
       width: 16px;
     }
@@ -251,7 +312,7 @@ export const SectionFor = styled.section`
 `
 
 export const SectionFive = styled.section`
-  color: white;
+  color: #fff;
   padding: 68px 165px;
   position: relative;
   background-image: url(${img1_section3_features}) ;
@@ -260,6 +321,10 @@ export const SectionFive = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    padding: 68px 40px;
+  }
 
   &::before{
     content: '';

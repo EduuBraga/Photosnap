@@ -7,7 +7,7 @@ import { Button1, Button3, Button4 } from "../../components/Buttons/style";
 import arrow_white from "../../assets/icons/arrow_white.png";
 import check from "../../assets/icons/check.png";
 
-import { Container, SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, Switch, SectionFor, SectionFive } from "./style";
+import { SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, Switch, SectionFor, SectionFive, ContentOneCardPricing, ContentTwoCardPricing } from "./style";
 
 export function Pricing() {
   const [MonthlyOrYearly, setMonthlyOrYealy] = useState('monthly')
@@ -30,7 +30,7 @@ export function Pricing() {
   }
 
   return (
-    <Container>
+    <>
       <Header />
 
       <main>
@@ -57,33 +57,54 @@ export function Pricing() {
 
         <SectionThree>
           <CardLightPricing>
-            <h2>Basic</h2>
-            <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
-            <div>
+            <ContentOneCardPricing>
+              <h2>Basic</h2>
+              <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+              <div>
+                <p>{basicPrice}</p>
+                {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
+              </div>
+              <Button1>PICK PLAN</Button1>
+            </ContentOneCardPricing>
+
+            <ContentTwoCardPricing>
               <p>{basicPrice}</p>
               {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
-            </div>
-            <Button1>PICK PLAN</Button1>
+            </ContentTwoCardPricing>
           </CardLightPricing>
 
           <CardBlackPricing>
-            <h2>Pro</h2>
-            <p>More advanced features available. Recommended for photography veterans and professionals.</p>
-            <div>
+            <ContentOneCardPricing>
+              <h2>Pro</h2>
+              <p>More advanced features available. Recommended for photography veterans and professionals.</p>
+              <div>
+                <p>{proPrice}</p>
+                {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
+              </div>
+              <Button3>PICK PLAN</Button3>
+            </ContentOneCardPricing>
+
+            <ContentTwoCardPricing>
               <p>{proPrice}</p>
               {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
-            </div>
-            <Button3>PICK PLAN</Button3>
+            </ContentTwoCardPricing>
           </CardBlackPricing>
 
           <CardLightPricing>
-            <h2>Business</h2>
-            <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
-            <div>
+            <ContentOneCardPricing>
+              <h2>Business</h2>
+              <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
+              <div>
+                <p>{businessPrice}</p>
+                {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
+              </div>
+              <Button1>PICK PLAN</Button1>
+            </ContentOneCardPricing>
+
+            <ContentTwoCardPricing>
               <p>{businessPrice}</p>
               {MonthlyOrYearly === 'monthly' ? (<span>per month</span>) : (<span>per year</span>)}
-            </div>
-            <Button1>PICK PLAN</Button1>
+            </ContentTwoCardPricing>
           </CardLightPricing>
         </SectionThree>
 
@@ -160,6 +181,6 @@ export function Pricing() {
       </main>
 
       <Footer />
-    </Container>
+    </>
   )
 }
