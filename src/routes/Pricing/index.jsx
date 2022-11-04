@@ -7,7 +7,7 @@ import { Button1, Button3, Button4 } from "../../components/Buttons/style";
 import arrow_white from "../../assets/icons/arrow_white.png";
 import check from "../../assets/icons/check.png";
 
-import { SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, Switch, SectionFor, SectionFive, ContentOneCardPricing, ContentTwoCardPricing } from "./style";
+import { SectionOne, SectionTwo, SectionThree, CardLightPricing, CardBlackPricing, TrNames, TrHead, Switch, SectionFor1, SectionFor2, SectionFive, ContentOneCardPricing, ContentTwoCardPricing, TrImgs } from "./style";
 
 export function Pricing() {
   const [MonthlyOrYearly, setMonthlyOrYealy] = useState('monthly')
@@ -108,7 +108,7 @@ export function Pricing() {
           </CardLightPricing>
         </SectionThree>
 
-        <SectionFor>
+        <SectionFor1>
           <h1>COMPARE</h1>
           <table>
             <thead>
@@ -170,7 +170,134 @@ export function Pricing() {
               </tr>
             </tbody>
           </table>
-        </SectionFor>
+        </SectionFor1>
+
+        <SectionFor2>
+          <table>
+            <thead>
+              <tr>
+                <th>THE FEATURES</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <TrHead>
+                <th>UNLIMITED STORY POSTING</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>UNLIMITED PHOTO UPLOAD</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>EMBEDDING CUSTOM CONTENT</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>CUSTOMIZE METADATA</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>ADVANCED METRICS</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>PHOTO DOWNLOADS</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>SEARCH ENGINE INDEXING</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+              <TrHead>
+                <th>CUSTOM ANALYTICS</th>
+              </TrHead>
+              <TrNames>
+                <td>BASIC</td>
+                <td>PRO</td>
+                <td>BUSINESS</td>
+              </TrNames>
+              <TrImgs>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+                <td><img src={check} alt="icone de check" /></td>
+              </TrImgs>
+
+            </tbody>
+
+          </table>
+
+        </SectionFor2>
 
         <SectionFive>
           <div>
