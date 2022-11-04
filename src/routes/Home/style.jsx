@@ -9,6 +9,10 @@ export const SectionOne = styled.section`
   display: grid;
   grid-template: auto / 45% 55%;
   height: 650px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto / 65% 35%;
+  }
   
   div:nth-child(1){
     display: flex;
@@ -48,6 +52,10 @@ export const SectionTwo = styled.section`
   display: grid;
   grid-template: auto / 55% 45%;
   height: 650px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto / 35% 65%;
+  }
   
   div:nth-child(1){
     display: flex;
@@ -87,6 +95,10 @@ export const SectionThree = styled.section`
   display: grid;
   grid-template: auto / 45% 55%;
   height: 650px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto / 65% 35%;
+  }
   
   div:nth-child(1){
     display: flex;
@@ -126,6 +138,11 @@ export const SectionFor = styled.section`
   display: grid;
   grid-template: auto / 25% 25% 25% 25%;
   height: 500px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto auto / 50% 50%;
+    height: 1000px;
+  }
 
   div{
     display: flex;
@@ -220,7 +237,12 @@ export const SectionFive = styled.div`
   align-items: center;
   justify-content: space-around;
   gap: 30px;
-  padding: 116px;
+  padding: 120px;
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+    gap: 80px;
+  }
 
   div{
     width: 350px;
@@ -233,7 +255,7 @@ export const SectionFive = styled.div`
     text-align: center;
 
     p{
-      opacity: 0.6;
+      opacity: 0.6;  
     }
 
     img{
