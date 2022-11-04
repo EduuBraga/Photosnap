@@ -5,7 +5,6 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Button4 } from "../../components/Buttons/style";
 
-import img1_section1_features from '../../assets/images/img1_section1_features.png'
 import midias_sociais from "../../assets/icons/midias_sociais.jpg";
 import infinite from "../../assets/icons/infinite.jpg";
 import media_screen from "../../assets/icons/media_screen.jpg";

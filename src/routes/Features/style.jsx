@@ -12,16 +12,16 @@ export const SectionOne = styled.div`
     grid-template: auto / 70% 30%;
   }
 
+  @media screen and (max-width: 426px){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   div:nth-child(1){
     background-color: #000000;
     color: #ffffff;
     display: flex;
     align-items: center;
-    padding: 100px;
-
-    @media screen and (max-width: 768px){
-      padding: 54px;
-    }
 
     article{
       display: flex;
@@ -29,13 +29,23 @@ export const SectionOne = styled.div`
       gap: 21px;
       position: relative;
 
+      padding: 100px;
+
+      @media screen and (max-width: 768px){
+        padding: 54px;
+      }
+
+      @media screen and (max-width: 426px){
+        padding: 72px 28px;
+      }
+
       p{
         opacity: 0.6;
       }
 
       ::after{
         content: '';
-        background-image: var(--mainAccent);
+        background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
         height: 100%;
         width: 5px;
         position: absolute;
@@ -43,6 +53,13 @@ export const SectionOne = styled.div`
 
         @media screen and (max-width: 768px){
           left: -54px;
+        }
+
+        @media screen and (max-width: 426px){
+          height: 6px;
+          width: 40%;
+          top: 0px;
+          left: 28px;
         }
       }
     }
@@ -53,6 +70,10 @@ export const SectionOne = styled.div`
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
+
+    @media screen and (max-width: 426px){
+      height: 294px;
+    }
   }
 `
 
@@ -70,6 +91,12 @@ export const SectionTwo = styled.section`
     padding:  112px 40px 72px  40px;
   }
 
+  @media screen and (max-width: 426px){
+    grid-template: auto auto auto auto auto auto / auto;
+    gap: 0px;
+    padding:  112px 40px 72px  40px;
+  }
+
   article{
     display: flex;
     flex-direction: column;
@@ -78,6 +105,10 @@ export const SectionTwo = styled.section`
     gap: 16px;
     text-align: center;
     padding-bottom: 84px;
+
+    @media screen and (max-width: 426px){
+      padding-bottom: 56px;
+    }
 
     img{
       margin-bottom: 32px;
@@ -100,6 +131,13 @@ export const SectionThree = styled.section`
   @media screen and (max-width: 768px){
     padding: 68px 40px;
   }
+  
+  @media screen and (max-width: 426px){
+    padding: 64px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 
   &::before{
     content: '';
@@ -121,6 +159,13 @@ export const SectionThree = styled.section`
     position: absolute;
     left: 0px;
     z-index: 5;
+
+    @media screen and (max-width: 426px){
+      height: 6px;
+      width: 40%;
+      top: 0px;
+      left: 28px;
+    }
   }
 
   div, button{
