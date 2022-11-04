@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import img1_section1_features from '../../assets/images/img1_section1_features.png'
 import img1_section3_features from '../../assets/images/img1_section3_features.png';
 
 export const SectionOne = styled.div`
@@ -7,12 +8,20 @@ export const SectionOne = styled.div`
   grid-template: auto / 45% 55%;
   height: 490px;
 
+  @media screen and (max-width: 768px){
+    grid-template: auto / 70% 30%;
+  }
+
   div:nth-child(1){
     background-color: #000000;
     color: #ffffff;
     display: flex;
     align-items: center;
     padding: 100px;
+
+    @media screen and (max-width: 768px){
+      padding: 54px;
+    }
 
     article{
       display: flex;
@@ -27,25 +36,23 @@ export const SectionOne = styled.div`
       ::after{
         content: '';
         background-image: var(--mainAccent);
-        height: 12em;
+        height: 100%;
         width: 5px;
         position: absolute;
         left: -100px;
+
+        @media screen and (max-width: 768px){
+          left: -54px;
+        }
       }
     }
   }
 
   div:nth-child(2){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
+    background-image: url(${img1_section1_features});
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
   }
 `
 
@@ -56,6 +63,12 @@ export const SectionTwo = styled.section`
   align-content: center;
   gap: 30px;
   padding:  116px 116px 76px  116px;
+
+  @media screen and (max-width: 768px){
+    grid-template: auto auto auto / 1fr 1fr;
+    gap: 11px;
+    padding:  112px 40px 72px  40px;
+  }
 
   article{
     display: flex;
@@ -83,6 +96,10 @@ export const SectionThree = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    padding: 68px 40px;
+  }
 
   &::before{
     content: '';
