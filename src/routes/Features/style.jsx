@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import img1_section3_features from '../../assets/images/img1_section3_features.png';
 
-
 export const SectionOne = styled.div`
   display: grid;
   grid-template: auto / 45% 55%;
@@ -97,7 +96,7 @@ export const SectionThree = styled.section`
     opacity: 0.6;
   }
 
-  &  &::after{
+  &::after{
     content: '';
     background-image: linear-gradient(45deg,#ffc593, #bc7198, #5a77ff);
     height: 100%;
