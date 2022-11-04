@@ -43,6 +43,11 @@ export const CardsStories = styled.section`
   grid-template: auto / 25% 25% 25% 25%;
   height: 500px;
 
+  @media screen and (max-width: 768px){
+    grid-template: auto auto / 50% 50%;
+    height: 1000px;
+  }
+
   div{
     display: flex;
     flex-direction: column;
