@@ -85,7 +85,7 @@ export const ContainerMenuTablet = styled.section`
   z-index: 5;
   background-color: #00000060;
   position: fixed;
-  top: ${({isVisible})=> isVisible ? '100vh' : '0px'};
+  top: ${({isVisible})=> isVisible ? '0px' : '100%'};
   bottom: 0;
   left: 0;
   right: 0;
@@ -98,7 +98,7 @@ export const ContainerMenuTablet = styled.section`
 
 export const ContentMenuTablet = styled.div`
   position: fixed;
-  top: ${({isVisible})=> isVisible ? '100vh' : '0px'};
+  top: ${({isVisible})=> isVisible ? '0px' : '100%'};
   left: 0;
   right: 0;
   background-color: white;
