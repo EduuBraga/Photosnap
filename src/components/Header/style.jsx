@@ -19,7 +19,6 @@ export const Logo = styled.div`
   gap: 8px;
   cursor: pointer;
 
-
   img{
     width: 25px;
   }
@@ -71,7 +70,6 @@ export const ContainerMenu = styled.section`
 export const ImgMenu = styled.img`
   width: 20px;
   justify-self: flex-end;
-  z-index: 5;
   cursor: pointer;
 
   &:active{
@@ -84,26 +82,60 @@ export const ImgMenu = styled.img`
 `
 
 export const ContainerMenuTablet = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-
-  background-color: white;
-  padding: 32px;
-  z-index: 0;
-  top: ${({isVisible})=> isVisible ? '60px' : '-250px'};
+  z-index: 5;
+  background-color: #00000060;
+  position: fixed;
+  top: ${({isVisible})=> isVisible ? '100vh' : '0px'};
+  bottom: 0;
   left: 0;
   right: 0;
-  position: absolute;
   transition: all 0.2s ease-out;
-
-  button{
-    width: 80%;
-  }
 
   @media screen and (min-width: 769px){
     display: none;
   }
+`
+
+export const ContentMenuTablet = styled.div`
+  position: fixed;
+  top: ${({isVisible})=> isVisible ? '100vh' : '0px'};
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-out;
+
+  button{
+    margin-top: 20px;
+    width: 90%;
+  }
+`
+
+export const LogoAndClose = styled.div`
+  padding-bottom: 28px;
+  
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    img{
+      width: 25px;
+    }
+
+    p{
+      font-weight: 700;
+      font-size: 20px;
+    } 
+  }
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
