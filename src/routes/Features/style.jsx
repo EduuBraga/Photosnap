@@ -49,10 +49,11 @@ export const SectionOne = styled.div`
         height: 100%;
         width: 5px;
         position: absolute;
-        left: -100px;
+        top: 0;
+        left: 0px;
 
         @media screen and (max-width: 768px){
-          left: -54px;
+          left: 0px;
         }
 
         @media screen and (max-width: 426px){
